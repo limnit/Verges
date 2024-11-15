@@ -1,1 +1,23 @@
+# config/config.yml
+
+database:
+  host: ${DATABASE_HOST}
+  port: ${DATABASE_PORT}
+  database: ${DATABASE_NAME}
+  user: ${DATABASE_USER}
+  password: ${DATABASE_PASSWORD}
+
+market_data:
+  api_key: ${MARKET_DATA_API_KEY}
+
+risk_management:
+  plugins:
+    - credit_limit
+    - margin_check
+    - notional_limit
+    - volume_limit
+    - trading_mode
+    - portfolio_margin
+    - equity_option_spread
+    - message_throttling
 
